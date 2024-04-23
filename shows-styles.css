@@ -1,0 +1,121 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100%;
+    background-image: url('Max.jpeg'); 
+    background-size: cover; /* Cover the entire background without stretching */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+.nunito-nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    text-align: center; 
+    margin-top: 50px; 
+    align-items: center;
+    position: relative; /* Ensure content stays above the video */
+    z-index: 1; /* Ensure the content is above the video */
+}
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+h2 {
+    color: #ffd700; 
+    text-align: center; 
+    position: absolute; 
+    top: 5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+   
+}
+
+h3 {
+    color: #ffd700;  
+    margin-bottom: 20%;
+}
+
+h4 {
+    color: #ffd700; 
+}
+
+nav, .social-icons, h2 {
+    position: relative;
+    z-index: 2; /* Ensure the navigation and icons are above the fading overlay */
+}
+
+
+
+/*nav*/
+nav {
+    position: absolute;
+    top: 125px; 
+    right: 145px; 
+}
+nav ul {
+    list-style: none; /* Remove bullets from the list */
+    padding: 10px;
+    margin: 10px; 
+}
+nav ul li {
+    padding: 8px;
+}
+ 
+
+nav ul li a {
+    color: #ffd700;  
+    text-decoration: none; /* Remove the underline from the links */
+    padding: 10px;
+    font-size: 16px; 
+    transition: font-size 0.3s ease; 
+}
+
+nav ul li a:hover {
+    font-size: 18px; 
+    color: #0de315;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffd700;  
+    font-size: 35px; /* Adjust the size of the icons */
+    transition: color 0.3s ease; /* Add a transition effect */
+}
+
+.social-icons a:hover {
+    color: #0de315; 
+}
